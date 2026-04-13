@@ -1,0 +1,124 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+}
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 40px;
+}
+
+.filter-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.filter-box {
+    flex: 1;
+}
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+select,
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+select:focus,
+input:focus {
+    border-color: #1a73e8;
+}
+
+.datagrid-container {
+    display: flex;
+    border: 2px solid #444;
+    border-radius: 4px;
+    display: none; /* Ẩn mặc định */
+}
+.grid-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+}
+.grid-column:first-child {
+    border-right: 2px solid #444;
+}
+
+.column-header {
+    background: #eee;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+.content-box {
+    padding: 15px;
+    overflow-y: auto;
+}
+.data-item {
+    color: #1a73e8;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.detail-text {
+    line-height: 1.6;
+    color: #555;
+}
+/* Hiệu ứng khi bị khóa */
+input:disabled,
+select:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Danh sách gợi ý hiện ra dưới input */
+.suggestion-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none; /* Ẩn khi không dùng */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.suggestion-item:hover {
+    background-color: #f1f7ff;
+    color: #1a73e8;
+}
+/* Màu nền khi dùng phím mũi tên di chuyển qua các mục */
+.suggestion-item.selected {
+    background-color: #d1e7ff;
+    color: #1a73e8;
+    outline: none;
+}

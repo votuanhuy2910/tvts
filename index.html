@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tra cứu ngành nghề - Demo</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Tra cứu thông tin ngành/nghề</h1>
+
+            <div class="filter-section">
+                <div class="filter-box">
+                    <label>Chọn Chương trình đào tạo</label>
+                    <select id="majorSelect">
+                        <option value="">-- Chọn ngành --</option>
+                    </select>
+                </div>
+
+                <div class="filter-box">
+                    <label>Tìm kiếm Chương trình đào tạo</label>
+                    <div style="position: relative">
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Nhập tên ngành..."
+                        />
+                        <div id="suggestionBox" class="suggestion-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="datagrid-container" id="dataView">
+                <div class="grid-column">
+                    <div class="column-header">Chương trình đào tạo</div>
+                    <div id="listMajors" class="content-box"></div>
+                </div>
+                <div class="grid-column">
+                    <div class="column-header">Chi tiết ngành/nghề</div>
+                    <div id="detailView" class="content-box detail-text"></div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
