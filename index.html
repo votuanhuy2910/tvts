@@ -2,45 +2,236 @@
 <html lang="vi">
     <head>
         <meta charset="UTF-8" />
-        <title>Tra cứu ngành nghề - Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#1a73e8" />
+        <title>UEH — Khám Phá Ngành Nghề</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Coiny&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="manifest" href="manifest.webmanifest" />
         <link rel="stylesheet" href="style.css" />
+        <link
+            rel="shortcut icon"
+            href="/logo-ueh-color.ico"
+            type="image/x-icon"
+        />
+        <link rel="apple-touch-icon" href="/logo-ueh-color.ico" />
+        <script>
+            // Restore theme trước khi render để tránh flash
+            (function () {
+                const t = localStorage.getItem("uehTheme");
+                if (t === "dark")
+                    document.documentElement.setAttribute("data-theme", "dark");
+            })();
+        </script>
     </head>
     <body>
-        <div class="container">
-            <h1>Tra cứu thông tin ngành/nghề</h1>
+        <div class="bg-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
 
+        <div class="container">
+            <!-- HEADER -->
+            <header class="site-header">
+                <div class="logo-area">
+                    <span class="logo-badge">UEH</span>
+                    <div>
+                        <h1 class="site-title">Khám phá Ngành Nghề</h1>
+                        <p class="site-sub">Tìm con đường phù hợp với bạn</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button id="btnOpenCompare" class="btn-compare-open">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            width="16"
+                            height="16"
+                        >
+                            <path d="M18 20V10M12 20V4M6 20v-6" />
+                        </svg>
+                        So sánh ngành
+                    </button>
+                    <button id="darkModeToggle" class="btn-mode">
+                        <span class="mode-icon">🌙</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- SMART FILTER -->
+            <section class="smart-filter">
+                <p class="filter-label">Bạn có tố chất gì?</p>
+                <div class="filter-tags" id="traitFilters">
+                    <button class="trait-btn" data-trait="sáng tạo">
+                        ✦ Sáng tạo
+                    </button>
+                    <button class="trait-btn" data-trait="logic">
+                        ⬡ Tư duy Logic
+                    </button>
+                    <button class="trait-btn" data-trait="giao tiếp">
+                        ◈ Giao tiếp
+                    </button>
+                    <button class="trait-btn" data-trait="tỉ mỉ">
+                        ◎ Tỉ mỉ
+                    </button>
+                    <button class="trait-btn" data-trait="toán học">
+                        ∑ Toán học
+                    </button>
+                    <button class="trait-btn" data-trait="nhạy bén">
+                        ⚡ Nhạy bén
+                    </button>
+                </div>
+            </section>
+
+            <!-- SEARCH & SELECT -->
             <div class="filter-section">
                 <div class="filter-box">
-                    <label>Chọn Chương trình đào tạo</label>
-                    <select id="majorSelect">
-                        <option value="">-- Chọn ngành --</option>
-                    </select>
+                    <label class="input-label">Chương trình đào tạo</label>
+                    <div class="select-wrap">
+                        <select id="majorSelect">
+                            <option value="">-- Chọn ngành --</option>
+                        </select>
+                    </div>
                 </div>
-
                 <div class="filter-box">
-                    <label>Tìm kiếm Chương trình đào tạo</label>
+                    <label class="input-label">Tìm kiếm nhanh</label>
                     <div style="position: relative">
                         <input
                             type="text"
                             id="searchInput"
-                            placeholder="Nhập tên ngành..."
+                            placeholder="Gõ tên ngành..."
+                            class="search-input"
                         />
                         <div id="suggestionBox" class="suggestion-list"></div>
                     </div>
                 </div>
             </div>
 
+            <!-- DATA GRID -->
             <div class="datagrid-container" id="dataView">
                 <div class="grid-column">
-                    <div class="column-header">Chương trình đào tạo</div>
+                    <div class="column-header">
+                        <span>Chương trình</span>
+                    </div>
                     <div id="listMajors" class="content-box"></div>
                 </div>
                 <div class="grid-column">
-                    <div class="column-header">Chi tiết ngành/nghề</div>
-                    <div id="detailView" class="content-box detail-text"></div>
+                    <div class="column-header">
+                        <span>Chi tiết ngành / nghề</span>
+                        <div class="action-btns">
+                            <button
+                                id="btnBookmark"
+                                title="Lưu yêu thích"
+                                class="icon-btn"
+                            >
+                                🤍
+                            </button>
+                        </div>
+                    </div>
+                    <div id="detailView" class="content-box detail-text">
+                        <div class="placeholder-hint">
+                            ← Chọn một ngành để xem chi tiết
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAVORITES -->
+            <div id="favoriteSection" class="favorite-list">
+                <p class="fav-title">Đã quan tâm</p>
+                <div id="favoriteItems"></div>
+            </div>
+        </div>
+
+        <!-- COMPARE PICKER MODAL -->
+        <div id="comparePickerModal" class="modal">
+            <div class="modal-content modal-content--picker">
+                <button class="close-modal" data-target="comparePickerModal">
+                    ✕
+                </button>
+                <h2 class="modal-title">So sánh ngành nghề</h2>
+                <p class="modal-sub">Chọn 2 ngành bạn muốn so sánh</p>
+
+                <div class="picker-grid">
+                    <div class="picker-slot" id="slot1">
+                        <div class="slot-label">Ngành thứ nhất</div>
+                        <div class="slot-select-wrap">
+                            <select id="compareSelect1" class="compare-select">
+                                <option value="">-- Chọn ngành --</option>
+                            </select>
+                        </div>
+                        <div class="slot-preview" id="preview1"></div>
+                    </div>
+
+                    <div class="picker-vs">VS</div>
+
+                    <div class="picker-slot" id="slot2">
+                        <div class="slot-label">Ngành thứ hai</div>
+                        <div class="slot-select-wrap">
+                            <select id="compareSelect2" class="compare-select">
+                                <option value="">-- Chọn ngành --</option>
+                            </select>
+                        </div>
+                        <div class="slot-preview" id="preview2"></div>
+                    </div>
+                </div>
+
+                <div class="picker-actions">
+                    <button id="btnDoCompare" class="btn-do-compare" disabled>
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            width="16"
+                            height="16"
+                        >
+                            <path d="M18 20V10M12 20V4M6 20v-6" />
+                        </svg>
+                        Xem so sánh
+                    </button>
                 </div>
             </div>
         </div>
+
+        <!-- COMPARE RESULT MODAL -->
+        <div id="compareResultModal" class="modal">
+            <div class="modal-content modal-content--result">
+                <button class="close-modal" data-target="compareResultModal">
+                    ✕
+                </button>
+                <button class="btn-back-picker" id="btnBackPicker">
+                    ← Chọn lại
+                </button>
+                <h2 class="modal-title">Kết quả so sánh</h2>
+                <div
+                    id="compareResultContent"
+                    class="compare-result-grid"
+                ></div>
+            </div>
+        </div>
+
         <script src="script.js"></script>
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker
+                        .register("sw.js")
+                        .then((reg) =>
+                            console.log("Đăng ký PWA thành công!", reg),
+                        )
+                        .catch((err) =>
+                            console.log("Đăng ký PWA thất bại!", err),
+                        );
+                });
+            }
+        </script>
     </body>
 </html>
