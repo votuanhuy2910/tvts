@@ -325,4 +325,24 @@ majorSelect.onchange = (e) => {
     if (e.target.value) displayData(e.target.value);
 };
 
+window.addEventListener("load", () => {
+    const splash = document.getElementById("splash-screen");
+
+    // Bạn có thể cá nhân hóa lời chào dựa theo thời gian
+    const welcomeText = document.getElementById("welcome-text");
+    const hour = new Date().getHours();
+    if (hour < 12) welcomeText.textContent = "Chào buổi sáng!";
+    else if (hour < 18) welcomeText.textContent = "Chào buổi chiều!";
+    else welcomeText.textContent = "Chào buổi tối!";
+
+    // Sau 2 giây thì ẩn màn hình chào
+    setTimeout(() => {
+        splash.style.opacity = "0";
+        splash.style.visibility = "hidden";
+
+        // Sau khi ẩn xong thì có thể kích hoạt các tính năng khác của app
+        console.log("Đã vào trang chính");
+    }, 2000);
+});
+
 initApp();
