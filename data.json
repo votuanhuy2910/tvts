@@ -1,26 +1,410 @@
 [
-  {
-    "nhom": "Khối Kinh tế",
-    "nganh": "Kinh doanh quốc tế",
-    "tochat": ["giao tiếp", "nhạy bén"],
-    "chitiet": "<table width='100%'><tr><td><strong>Cơ hội:</strong> Xuất nhập khẩu, Logistics toàn cầu.</td></tr><tr><td><strong>Mô tả:</strong> Làm việc trong môi trường đa quốc gia.</td></tr></table>"
-  },
-  {
-    "nhom": "Khối Kinh tế",
-    "nganh": "Marketing",
-    "tochat": ["sáng tạo", "giao tiếp"],
-    "chitiet": "<strong>Đào tạo:</strong> Nghiên cứu thị trường, quảng cáo số.<br><strong>Tố chất:</strong> Cần sự năng động và khả năng nắm bắt xu hướng."
-  },
-  {
-    "nhom": "Khối Kỹ thuật",
-    "nganh": "Công nghệ thông tin",
-    "tochat": ["logic", "tỉ mỉ"],
-    "chitiet": "<p>Học về lập trình, mạng máy tính và AI.</p><ul><li>Web Development</li><li>Mobile App</li></ul>"
-  },
-  {
-    "nhom": "Khối Kỹ thuật",
-    "nganh": "Khoa học dữ liệu",
-    "tochat": ["logic", "toán học"],
-    "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
-  }
+    {
+        "nhom": "Viện Khoa học chính trị - xã hội",
+        "nganh": "Kinh tế chính trị",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Khoa học chính trị - xã hội",
+        "nganh": "Kinh tế chính trị quốc tế",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kinh tế",
+        "nganh": "Bất động sản",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kinh tế",
+        "nganh": "Kinh doanh nông nghiệp",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kinh tế",
+        "nganh": "Kinh tế",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kinh tế",
+        "nganh": "Kinh tế đầu tư",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kinh tế",
+        "nganh": "Thẩm định giá và Quản trị tài sản",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kinh tế",
+        "nganh": "Quản trị nhân lực",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Luật",
+        "nganh": "Luật",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Luật",
+        "nganh": "Luật kinh doanh quốc tế",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Luật",
+        "nganh": "Luật kinh tế",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Luật",
+        "nganh": "Luật thương mại quốc tế",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Ngoại Ngữ",
+        "nganh": "Tiếng Anh thương mại",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Quản lý nhà nước",
+        "nganh": "Quản lý công",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Tài chính công",
+        "nganh": "Quản trị Hải quan – Ngoại thương",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Tài chính công",
+        "nganh": "Tài chính công",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Tài chính công",
+        "nganh": "Thuế",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Toán - Thống kê",
+        "nganh": "Thống kê kinh doanh",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Toán - Thống kê",
+        "nganh": "Phân tích rủi ro và định phí bảo hiểm",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Toán - Thống kê",
+        "nganh": "Toán tài chính",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Tài chính bền vững",
+        "nganh": "Quản trị bền vững doanh nghiệp và môi trường",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Tài chính bền vững",
+        "nganh": "Quản trị bền vững doanh nghiệp và môi trường song bằng UEH - Koblenz University of Applied Sciences (Hochschule Koblenz), Đức",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Du lịch",
+        "nganh": "Quản trị dịch vụ du lịch và lữ hành",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Du lịch",
+        "nganh": "Quản trị khách sạn",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Du lịch",
+        "nganh": "Quản trị sự kiện và dịch vụ giải trí",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kế toán",
+        "nganh": "Chương trình Kế toán tích hợp chứng chỉ nghề nghiệp quốc tế ACCA",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kế toán",
+        "nganh": "Chương trình Kế toán tích hợp chứng chỉ nghề nghiệp quốc tế ICAEW",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kế toán",
+        "nganh": "Kế toán công",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kế toán",
+        "nganh": "Kế toán doanh nghiệp",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kế toán",
+        "nganh": "Kiểm toán",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kinh doanh quốc tế - Marketing",
+        "nganh": "Kinh doanh quốc tế",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kinh doanh quốc tế - Marketing",
+        "nganh": "Kinh doanh thương mại",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kinh doanh quốc tế - Marketing",
+        "nganh": "Logistics và Quản lý chuỗi cung ứng",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kinh doanh quốc tế - Marketing",
+        "nganh": "Công nghệ Marketing",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Kinh doanh quốc tế - Marketing",
+        "nganh": "Marketing",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Ngân hàng",
+        "nganh": "Ngân hàng",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Ngân hàng",
+        "nganh": "Thị trường chứng khoán",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Quản trị",
+        "nganh": "Kinh doanh số",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Quản trị",
+        "nganh": "Quản trị bệnh viện",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Quản trị",
+        "nganh": "Quản trị kinh doanh",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Tài chính",
+        "nganh": "Bảo hiểm",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Tài chính",
+        "nganh": "Chương trình đào tạo nguồn nhân lực quốc tế cử nhân Tài chính - Ngân hàng song bằng UEH - Đại học Rennes, Pháp",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Tài chính",
+        "nganh": "Đầu tư tài chính",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Tài chính",
+        "nganh": "Tài chính",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Tài chính",
+        "nganh": "Tài chính quốc tế",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Công nghệ thông tin kinh doanh",
+        "nganh": "An toàn thông tin",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Công nghệ thông tin kinh doanh",
+        "nganh": "Công nghệ thông tin",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Công nghệ thông tin kinh doanh",
+        "nganh": "Hệ thống thông tin quản lý",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Công nghệ thông tin kinh doanh",
+        "nganh": "Khoa học dữ liệu",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Công nghệ thông tin kinh doanh",
+        "nganh": "Khoa học máy tính",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Công nghệ thông tin kinh doanh",
+        "nganh": "Kỹ thuật phần mềm",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Công nghệ thông tin kinh doanh",
+        "nganh": "Thương mại điện tử",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Thiết kế truyền thông",
+        "nganh": "Công nghệ nghệ thuật",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Thiết kế truyền thông",
+        "nganh": "Truyền thông số và thiết kế đa phương tiện",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Khoa Thiết kế truyền thông",
+        "nganh": "Truyền thông số và thiết kế đa phương tiện song bằng UEH - Đại học Saint Joseph, Macao",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Công nghệ thông minh và tương tác",
+        "nganh": "Sản xuất thông minh (hệ kỹ sư)",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Công nghệ thông minh và tương tác",
+        "nganh": "Phân tích dữ liệu",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Công nghệ thông minh và tương tác",
+        "nganh": "Công nghệ Logistics (hệ kỹ sư)",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Công nghệ thông minh và tương tác",
+        "nganh": "Công nghệ Logistics tích hợp chứng chỉ quốc tế FIATA - Tiếng Anh toàn phần (hệ kỹ sư)",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Công nghệ thông minh và tương tác",
+        "nganh": "Điều khiển thông minh và tự động hóa (hệ kỹ sư)",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Công nghệ thông minh và tương tác",
+        "nganh": "Điều khiển thông minh và tự động hóa song bằng UEH - Đại học Kwangwoon, Hàn Quốc (hệ kỹ sư)",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Công nghệ thông minh và tương tác",
+        "nganh": "Robot và Trí tuệ nhân tạo (hệ kỹ sư)",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Công nghệ thông minh và tương tác",
+        "nganh": "Robot và Trí tuệ nhân tạo song bằng UEH - Đại học Kwangwoon, Hàn Quốc (hệ kỹ sư)",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Đô thị thông minh và Quản lý",
+        "nganh": "Cử nhân Kiến trúc và thiết kế đô thị thông minh song bằng UEH - Đại học Auckland, New Zealand",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Đô thị thông minh và Quản lý",
+        "nganh": "Kiến trúc và Thiết kế đô thị thông minh (hệ kiến trúc sư)",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Đô thị thông minh và quản lý",
+        "nganh": "Quản trị vận hành và di chuyển thông minh",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Đổi mới sáng tạo",
+        "nganh": "Công nghệ tài chính",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    },
+    {
+        "nhom": "Viện Đổi mới sáng tạo",
+        "nganh": "Công nghệ và đổi mới sáng tạo",
+        "tochat": ["logic", "toán học"],
+        "chitiet": "Phân tích dữ liệu lớn, xây dựng mô hình dự báo bằng Machine Learning."
+    }
 ]

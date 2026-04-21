@@ -372,6 +372,13 @@ select,
 select:focus,
 .search-input:focus {
     border-color: var(--primary);
+    scroll-behavior: smooth;
+}
+
+#suggestionBox {
+    max-height: 200px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .suggestion-list {
