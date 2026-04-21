@@ -1,10 +1,10 @@
 {
     "name": "Tra cứu Ngành nghề UEH",
-    "short_name": "UEH Search",
+    "short_name": "UEH Search Together 🧡💚💛",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "rgba(0, 0, 0, 0.03)",
+    "theme_color": "#005f69",
     "icons": [
         {
             "src": "web-app-manifest-192x192.png",
