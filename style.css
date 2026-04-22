@@ -879,6 +879,7 @@ select:focus,
 ::-webkit-scrollbar-thumb {
     background: var(--border);
     border-radius: 10px;
+    scroll-behavior: smooth;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
@@ -888,6 +889,9 @@ select:focus,
 @media (max-width: 720px) {
     .site-header {
         padding: 20px;
+    }
+    .logo-badge {
+        display: none;
     }
     .filter-section {
         flex-direction: column;
